@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Styling */
+
+.header {
+  background-color: #203850;
+  height: 70px;
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+h1,
+h2 {
+  color: #e5e5e5;
+}
+
+.joystick {
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0 20px;
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+}
+
+.sorting_button {
+  background-color: #26af70;
+  color: #e5e5e5;
+  padding: 10px 22px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Body/Data Styling */
+
+.spinner {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  background-color: #e1e1e1;
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.table_name {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.table_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 40%;
+}
+
+.table_data th,
+.table_data p {
+  padding-left: 10px;
+}
+
+.table_data_hidden_element {
+  visibility: hidden;
+}
+
+.td_table {
+  display: flex;
+  flex-direction: row;
+}
+
+.table_small {
+  background-color: #ffffff;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table_date {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.game_name {
+  background-color: #203850;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+}
