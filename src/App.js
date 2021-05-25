@@ -55,7 +55,7 @@ function App() {
   const sortedByMatchStartDate = newDataWithDates.sort(function (d1, d2) {
     return new Date(d1.startDate) - new Date(d2.startDate);
   });
-  console.log(sortedByMatchStartDate);
+  console.log(toggleBtn);
 
   return (
     <div className="App">
@@ -82,11 +82,11 @@ function App() {
 
       <div>
         {toggleBtn === true
-          ? dummyData.map((item) => (
-              <RenderDataSortedByDate кеу={item.matchID} {...item} />
+          ? dummyData.map((item, i) => (
+              <RenderDataSortedByDate кеу={i} {...item} />
             ))
-          : dummyData.map((item) => (
-              <RenderDataSortedByLeague key={item.matchID} {...item} />
+          : dummyData.map((item, i) => (
+              <RenderDataSortedByLeague key={i} {...item} />
             ))}
       </div>
     </div>
